@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Anniversary</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function verifyDate() {
+            const inputDate = document.getElementById('anniversary').value;
+            if (inputDate === '2024-08-30') {
+                window.location.href = 'letter3.html';
+            } else {
+                alert("Please enter the correct date of our anniversary.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <a href="letter3.html">
+        <button class="navigation-button">Ir a la Carta</button>
+    </a>
+    
+    <!-- Background with overlay -->
+    <div class="background-overlay"></div>
+
+    <!-- Main content -->
+    <div class="hero">
+        <div class="card">
+            <img src="images/cute.jpg" alt="Photo of us" class="profile-pic">
+            <h1>Happy Anniversary, Amorcito</h1>
+            <p>Another month filled with love, adventures, and dreams fulfilled. <br> I am so happy to receive your love every day!</p>
+            
+            <div class="input-container">
+                <label for="anniversary">Enter the date our relationship began:</label>
+                <input type="date" id="anniversary">
+                <button onclick="verifyDate()">Continue</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
