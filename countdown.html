@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown - Our Anniversary</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="countdown-page">
+    <!-- Background with overlay -->
+    <div class="background-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Our Love</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="letters.html">Love Letters</a>
+                <a href="goals.html">Our Goals</a>
+                <a href="countdown.html" class="active">Countdown</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Countdown Container -->
+    <div class="countdown-container">
+        <div class="countdown-timer">
+            <h1>Countdown to Our Special Day</h1>
+            
+            <div class="event-selector" role="tablist" aria-label="Event selection">
+                <button class="event-btn active" data-event="wedding" role="tab" aria-selected="true">Wedding</button>
+                <button class="event-btn" data-event="anniversary" role="tab" aria-selected="false">Anniversary</button>
+                <button class="event-btn" data-event="special" role="tab" aria-selected="false">Special Day</button>
+            </div>
+            
+            <div id="countdown" class="timer" aria-live="polite">
+                <div class="time-box">
+                    <span id="days">0</span>
+                    <p>Days</p>
+                </div>
+                <div class="time-box">
+                    <span id="hours">0</span>
+                    <p>Hours</p>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">0</span>
+                    <p>Minutes</p>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">0</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+            
+            <div class="countdown-message" aria-live="polite">
+                <p>Every second brings us closer to forever ❤️</p>
+            </div>
+            
+            <!-- Location information -->
+            <div class="location-info">
+                <h3>Our Special Location</h3>
+                <div class="location-display">
+                    <div class="location-icon">
+                        <i class="location-pin">📍</i>
+                    </div>
+                    <div class="location-details">
+                        <p id="event-location">Paris, France</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating hearts decoration -->
+    <div class="floating-hearts" aria-hidden="true">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2025 | Made with ❤️ for my love</p>
+    </footer>
+
+    <script src="/scripts/modules/countdown.js"></script>
+    <script src="/scripts/modules/mobile-menu.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

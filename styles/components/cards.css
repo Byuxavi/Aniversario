@@ -1,0 +1,331 @@
+/* Card component styles */
+.card {
+    background: white;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    width: 100%;
+    transition: var(--transition-normal);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.card-header {
+    background: linear-gradient(to right, var(--color-rose-500), var(--color-rose-600));
+    color: white;
+    padding: var(--space-lg);
+    text-align: center;
+}
+
+.card-content {
+    padding: var(--space-lg);
+}
+
+/* Generic containers that function like cards */
+.countdown-timer {
+    background: white;
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-lg);
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Letter paper card */
+.letter-paper {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-lg);
+    padding: 2.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-medium);
+}
+
+.letter-paper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(to right, var(--color-rose-500), var(--color-rose-600));
+}
+
+/* Letter structure */
+.letter-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.letter-footer {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+/* Photo placeholder */
+.photo-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: var(--color-gray-100);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gray-500);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-medium);
+}
+
+.photo-placeholder.has-photo {
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-placeholder.has-photo::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.photo-message {
+    padding: 1rem;
+    font-style: italic;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Photo gallery items */
+.photo-item {
+    height: 200px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--color-gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gray-500);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-medium);
+}
+
+.photo-item.has-photo {
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.photo-item.has-photo::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo-item.has-photo:hover::before {
+    opacity: 1;
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.75rem;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.photo-item.has-photo:hover .photo-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scripture Box */
+.scripture-box {
+    background: linear-gradient(to right, rgba(226, 232, 240, 0.8), rgba(248, 250, 252, 0.8));
+    border-left: 4px solid var(--color-blue-500);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.scripture-box h3 {
+    color: var(--color-blue-600);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.scripture-box blockquote {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.scripture-box #scripture-reference {
+    text-align: right;
+    font-weight: 600;
+    color: var(--color-gray-700);
+}
+
+.scripture-box::after {
+    content: '"';
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+    font-size: 8rem;
+    color: rgba(0, 0, 0, 0.03);
+    font-family: serif;
+}
+
+/* Goal cards */
+.goal-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.goal-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--color-rose-500);
+}
+
+.goal-card:nth-child(2)::before {
+    background: var(--color-blue-500);
+}
+
+.goal-card:nth-child(3)::before {
+    background: var(--color-green-500);
+}
+
+.goal-card:nth-child(4)::before {
+    background: var(--color-amber-500);
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.goal-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.goal-card h3 {
+    color: var(--color-rose-600);
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+}
+
+.goal-card:nth-child(2) h3 {
+    color: var(--color-blue-600);
+}
+
+.goal-card:nth-child(3) h3 {
+    color: var(--color-green-600);
+}
+
+.goal-card:nth-child(4) h3 {
+    color: var(--color-amber-500);
+}
+
+.goal-card p {
+    color: var(--color-gray-700);
+    line-height: 1.6;
+}
+
+/* Timeline content cards */
+.timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    color: var(--color-rose-600);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.timeline-content p {
+    color: var(--color-gray-700);
+    line-height: 1.5;
+}
+
+/* Media queries for cards */
+@media (max-width: 991px) {
+    .letter-paper {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-item {
+        height: 150px;
+    }
+    
+    .photo-caption {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .letter-paper {
+        padding: 1.5rem 1rem;
+    }
+    
+    .photo-placeholder {
+        height: 200px;
+    }
+}

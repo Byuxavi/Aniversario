@@ -1,0 +1,74 @@
+/* variables.css - Variables CSS consolidadas */
+:root {
+    /* Colores Rose */
+    --color-rose-50: #fff1f2;
+    --color-rose-100: #ffe4e6;
+    --color-rose-200: #fecdd3;
+    --color-rose-300: #fda4af;
+    --color-rose-400: #fb7185;
+    --color-rose-500: #f43f5e;
+    --color-rose-600: #e11d48;
+    --color-rose-700: #be123c;
+    --color-rose-800: #9f1239;
+    
+    /* Colores Gray */
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+    
+    /* Colores adicionales */
+    --color-blue-500: #3b82f6;
+    --color-blue-600: #2563eb;
+    --color-green-500: #22c55e;
+    --color-green-600: #16a34a;
+    --color-amber-500: #f59e0b;
+    --color-purple-500: #a855f7;
+    
+    /* Tipografías */
+    --font-sans: 'Open Sans', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+    --font-fancy: 'Dancing Script', cursive;
+    --font-primary: var(--font-sans);
+    --font-accent: var(--font-fancy);
+    
+    /* Tamaños de fuente */
+    --font-xs: 0.75rem;
+    --font-small: 0.875rem;
+    --font-normal: 1rem;
+    --font-medium: 1.25rem;
+    --font-large: 1.5rem;
+    --font-xlarge: 2rem;
+    --font-xxlarge: 2.5rem;
+    
+    /* Espaciado */
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-xxl: 3rem;
+    
+    /* Bordes redondeados */
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 2rem;
+    --radius-full: 50%;
+    
+    /* Sombras */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    
+    /* Transiciones */
+    --transition-fast: all 0.15s ease;
+    --transition-medium: all 0.3s ease;
+    --transition-normal: var(--transition-medium);
+    --transition-slow: all 0.5s ease;
+}

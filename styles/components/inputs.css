@@ -1,0 +1,125 @@
+/* Input component styles */
+
+/* Base styles for input elements */
+input, textarea, select {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--color-gray-800);
+    background-color: white;
+    border: 1px solid var(--color-gray-200);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    transition: var(--transition-fast);
+    width: 100%;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--color-rose-400);
+    box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.1);
+}
+
+/* Date input specific styles */
+input[type="date"] {
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+    border: 1px solid #e5e7eb;
+    transition: var(--transition-normal);
+}
+
+input[type="date"]:focus {
+    border-color: var(--color-rose-500);
+}
+
+input[type="date"].has-value {
+    border-color: var(--color-rose-500);
+    background-color: rgba(244, 63, 94, 0.05);
+}
+
+/* Checkbox and radio inputs */
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+/* Label styles */
+label, .input-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--color-gray-700);
+    font-size: 0.95rem;
+}
+
+.input-label {
+    font-weight: 600;
+}
+
+/* Form groups and layouts */
+.form-group, .input-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Textarea specific styles */
+.text-area, textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Message styles */
+.message {
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+    margin-top: var(--space-xs);
+    font-size: var(--font-small);
+    text-align: center;
+}
+
+.message.error {
+    background-color: #fee2e2;
+    color: #dc2626;
+    border-left: 3px solid #dc2626;
+}
+
+.message.success {
+    background-color: #dcfce7;
+    color: #16a34a;
+    border-left: 3px solid #16a34a;
+}
+
+.success-message,
+.error-message {
+    text-align: center;
+}
+
+/* Status icons */
+.icon-circle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+}
+
+.icon-circle.success {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.icon-circle.error {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+/* Profile and Image styles */
+.profile-pic {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: var(--shadow-sm);
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Goals - Our Anniversary</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Our shared goals and dreams for our future together">
+</head>
+<body class="goals-page">
+    <!-- Background with overlay -->
+    <div class="background-overlay"></div>
+    
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Our Love</span>
+                <span class="heart-icon">❤️</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-trans="nav-home">Home</a>
+                <a href="letters.html" data-trans="nav-letters">Love Letters</a>
+                <a href="goals.html" class="active" data-trans="nav-goals">Our Goals</a>
+                <a href="countdown.html" data-trans="nav-countdown">Countdown</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="goals-container">
+        <h1 data-trans="goals-heading">Our Goals for 2025</h1>
+        <p data-trans="goals-subheading">Dream big, love deeper, and grow stronger together.</p>
+        
+        <!-- Scripture of the day -->
+        <div class="scripture-box">
+            <h3 data-trans="scripture-heading">Today's Inspiration</h3>
+            <blockquote id="scripture-quote">
+                "Así como el Señor vive, y como nosotros vivimos, no descenderemos hasta nuestro padre en el desierto hasta que hayamos cumplido lo que el Señor nos ha mandado.."
+            </blockquote>
+            <p id="scripture-reference"> 1 Nefi 3:15</p>
+        </div>
+        
+        <!-- Image Carousel -->
+        <div class="carousel" aria-roledescription="carousel" aria-label="Our goals showcase">
+            <div class="carousel-slides">
+                <div class="carousel-slide active" aria-hidden="false" role="group" aria-roledescription="slide" aria-label="Slide 1 of 5">
+                    <img src="images/cute.jpg" alt="Wedding Goal">
+                    <div class="slide-caption">
+                        <h3 data-trans="goal1-title">Marriage</h3>
+                        <p data-trans="goal1-desc">Building a life together full of love and commitment.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="Slide 2 of 5">
+                    <img src="images/temple.jpg" alt="Faith Goal">
+                    <div class="slide-caption">
+                        <h3 data-trans="goal2-title">Stronger Relationship with Christ</h3>
+                        <p data-trans="goal2-desc">Walking in faith and love together on our spiritual journey.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="Slide 3 of 5">
+                    <img src="images/iglesia.jpg" alt="Travel Goal">
+                    <div class="slide-caption">
+                        <h3 data-trans="goal3-title">Explore the World</h3>
+                        <p data-trans="goal3-desc">Creating memories in beautiful places across different cultures.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="Slide 4 of 5">
+                    <img src="images/languages.jpg" alt="Languages Goal">
+                    <div class="slide-caption">
+                        <h3 data-trans="goal4-title">Language Learning</h3>
+                        <p data-trans="goal4-desc">Supporting each other in French and English studies for our future.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="Slide 5 of 5">
+                    <img src="images/programming.jpg" alt="Programming Goal">
+                    <div class="slide-caption">
+                        <h3 data-trans="goal5-title">Professional Growth</h3>
+                        <p data-trans="goal5-desc">Advancing in our programming and teaching careers together.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <div class="carousel-controls">
+                <button id="prev-slide" class="carousel-btn" aria-label="Previous slide">&#10094;</button>
+                <div class="carousel-indicators" role="tablist">
+                    <span class="indicator active" data-slide="0" role="tab" aria-selected="true" aria-label="Go to slide 1"></span>
+                    <span class="indicator" data-slide="1" role="tab" aria-selected="false" aria-label="Go to slide 2"></span>
+                    <span class="indicator" data-slide="2" role="tab" aria-selected="false" aria-label="Go to slide 3"></span>
+                    <span class="indicator" data-slide="3" role="tab" aria-selected="false" aria-label="Go to slide 4"></span>
+                    <span class="indicator" data-slide="4" role="tab" aria-selected="false" aria-label="Go to slide 5"></span>
+                </div>
+                <button id="next-slide" class="carousel-btn" aria-label="Next slide">&#10095;</button>
+            </div>
+        </div>
+        
+        <!-- Interactive Timeline -->
+        <div class="timeline-section">
+            <h2 data-trans="timeline-heading">Our Journey Together</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3 data-trans="timeline1-title">The Beginning</h3>
+                        <p data-trans="timeline1-desc">When we first met and started our adventure together.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024-2025</div>
+                    <div class="timeline-content">
+                        <h3 data-trans="timeline2-title">Growing Together</h3>
+                        <p data-trans="timeline2-desc">Learning about each other and supporting dreams.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <h3 data-trans="timeline3-title">Wedding</h3>
+                        <p data-trans="timeline3-desc">Our special day in Paris to begin our forever.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2026</div>
+                    <div class="timeline-content">
+                        <h3 data-trans="timeline4-title">First Anniversary</h3>
+                        <p data-trans="timeline4-desc">Celebrating one year of marriage in Rome.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional Goals Section -->
+        <div class="additional-goals">
+            <h2 data-trans="add-goals-heading">More Dreams to Achieve</h2>
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <div class="goal-icon">🏡</div>
+                    <h3 data-trans="home-goal-title">Our Home</h3>
+                    <p data-trans="home-goal-desc">Create a loving space we can call our own, filled with memories and joy.</p>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-icon">📚</div>
+                    <h3 data-trans="learn-goal-title">Growth Together</h3>
+                    <p data-trans="learn-goal-desc">Continue learning French and English while supporting each other's education.</p>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-icon">❤️</div>
+                    <h3 data-trans="bond-goal-title">Strengthen Our Bond</h3>
+                    <p data-trans="bond-goal-desc">Deepen our connection through meaningful experiences and faith.</p>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-icon">🙏</div>
+                    <h3 data-trans="church-goal-title">Service & Faith</h3>
+                    <p data-trans="church-goal-desc">Continue growing in our church community and serving others together.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Goal Progress Tracker -->
+        <div class="goal-tracker">
+            <h2 data-trans="tracker-heading">Our Progress</h2>
+            <div class="tracker-container">
+                <div class="tracker-item">
+                    <div class="tracker-label" data-trans="tracker1-label">Wedding Planning</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%;"></div>
+                    </div>
+                    <div class="progress-value">65%</div>
+                </div>
+                <div class="tracker-item">
+                    <div class="tracker-label" data-trans="tracker2-label">French Studies</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 40%;"></div>
+                    </div>
+                    <div class="progress-value">40%</div>
+                </div>
+                <div class="tracker-item">
+                    <div class="tracker-label" data-trans="tracker3-label">English Teaching Prep</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%;"></div>
+                    </div>
+                    <div class="progress-value">70%</div>
+                </div>
+                <div class="tracker-item">
+                    <div class="tracker-label" data-trans="tracker4-label">Programming Skills</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 45%;"></div>
+                    </div>
+                    <div class="progress-value">45%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating hearts decoration -->
+    <div class="floating-hearts" aria-hidden="true">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p data-trans="footer-copyright">&copy; 2025 | Made with ❤️ for my love</p>
+            <div class="footer-links">
+                <a href="#" data-trans="footer-privacy">Privacy</a>
+                <span class="separator">|</span>
+                <a href="#" data-trans="footer-terms">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/translations.js"></script>
+    <script src="scripts/modules/projects-gallery.js"></script>
+    <script src="scripts/modules/mobile-menu.js"></script>
+    <script src="scripts/modules/scripture-generator.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

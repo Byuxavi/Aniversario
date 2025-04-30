@@ -1,0 +1,398 @@
+[
+  {
+    "month": 1,
+    "date": "2024-09-30",
+    "title": "Mi Carta de Amor para Ti",
+    "content": [
+      "Amorcito, hace apenas un mes nuestras vidas se cruzaron en Malta, y desde el momento en que escuché tu voz, supe que eras tú. Todavía me asombra que en solo una semana, decidieras hacerme parte de tu vida.",
+      "Desde nuestra primera cita en el museo de aviones (entrada gratis), Mdina y mi victoria por apenas un punto en los bolos, cada momento ha sido especial. Incluso mi forma diferente al cocinar 'al estilo colombiano' y ese vergonzoso mensaje enviado por error a mi amigo de BYU en lugar de a ti, se han convertido en recuerdos que atesoro.",
+      "Contigo he descubierto emociones más intensas que cualquier cosa que haya experimentado antes. ¡Quizás por eso se me cayó tanta sal en la comida!"
+    ],
+    "signature": "Mi Mayor Bendición",
+    "memories": {
+      "photos": [
+        {
+          "photoUrl": "images/1mes/1mes.jpg",
+          "caption": "Primera cita"
+        },
+        {
+          "photoUrl": "images/1mes/bolos.jpg",
+          "caption": "Victoria por un punto"
+        },
+        {
+          "photoUrl": "images/1mes/cocinando.jpg",
+          "caption": "Cocina colombiana improvisada"
+        },
+        {
+          "photoUrl": "images/1mes/1carta.jpg",
+          "caption": "Tu primera carta"
+        },
+        {
+          "photoUrl": "images/1mes/colores.jpg",
+          "caption": "Explorando mi paleta de colores"
+        },
+        {
+          "photoUrl": "images/1mes/error.jpg",
+          "caption": "El mensaje equivocado"
+        },
+        {
+          "photoUrl": "images/1mes/sal.jpg",
+          "caption": "Sal de enamorado"
+        }
+      ]
+    },
+    "song": "https://www.youtube.com/watch?v=vGJTaP6anOU"
+  },
+  {
+    "month": 2,
+    "date": "2024-10-30",
+    "title": "Dos Meses de Maravillas",
+    "content": [
+      "Mi amor, han pasado dos meses desde que decidimos estar juntos sin importar la distancia entre Malta y Francia. Cada día se siente como un hermoso sueño.",
+      "Te envié aquella tarjetita virtual que intentaba capturar mis sentimientos, aunque no se compara con ese abrazo virtual que me mandaste para que yo recordara que tu corazón y tu me quieren mucho. Por cierto No estaba durmiendo durante la conferencia solo meditaba con los ojos cerrados.",
+      "Lo mejor fue cuando celebraste el 'Día del Novio' enviándome flores. Y verte con esa peluca negra, luciendo hermosa en otra realidad, me recordó cuánto adoro todas tus facetas."
+    ],
+    "signature": "Si se puede",
+    "memories": {
+      "photos": [
+        {
+          "photoUrl": "images/2mes/2mes.jpg",
+          "caption": "Tarjetita virtual"
+        },
+        {
+          "photoUrl": "images/2mes/abrazo.jpg",
+          "caption": "Abrazo a distancia"
+        },
+        {
+          "photoUrl": "images/2mes/conference.jpg",
+          "caption": "Durmiendo o Meditando?"
+        },
+        {
+          "photoUrl": "images/2mes/mejornovio.jpg",
+          "caption": "Flores en el Día del Novio"
+        },
+        {
+          "photoUrl": "images/2mes/peluca.jpg",
+          "caption": "Flora en versión pelinegra"
+        }
+      ]
+    },
+    "song": "https://www.youtube.com/watch?v=lp-EO5I60KA"
+  },
+  {
+    "month": 3,
+    "date": "2024-11-30",
+    "title": "Tres Meses de Amor",
+    "content": [
+      "Tres mágicos meses contigo, mi amor. Tu visita a Malta confirmó con mayor fuerza lo que ya sabía.",
+      "Me sorprendiste y me hiciste reir con ese divertido edit de una flor con mi cara. estas aprendiendo mis super frases para conquistar jajaja. Me encantó verte disfrazada como ingeniera para tu presentación, y nuestra primera foto romántica junto al atardecer (que salio para el lugar equivocado) será siempre un tesoro.",
+      "¡Qué día tan especial cuando visitamos Popeye Village! tambien recuerdo mi fallido intento de cara sexy (que afortunadamente correspondiste con una foto tuya para que no me sintiera avergonzado), ese momento relajado conectando en Popeye Village, y la pizza donde escribieron mal mi nombre como 'Xavjier'... cada recuerdo es una joya para mí."
+    ],
+    "signature": "Tu Xavjier",
+    "memories": {
+      "photos": [
+        {
+          "photoUrl": "images/3mes/lapiz.jpg",
+          "caption": "El lápiz para tu creatividad"
+        },
+        {
+          "photoUrl": "images/3mes/florjavier.jpg",
+          "caption": "Flor con mi rostro"
+        },
+        {
+          "photoUrl": "images/3mes/ingeniera.jpg",
+          "caption": "Ingeniera por un día"
+        },
+        {
+          "photoUrl": "images/3mes/iconica.jpg",
+          "caption": "Nuestra foto al atardecer"
+        },
+        {
+          "photoUrl": "images/3mes/popeye.jpg",
+          "caption": "Aventura en Popeye Village"
+        },
+        {
+          "photoUrl": "images/3mes/yosexi.jpg",
+          "caption": "Mi intento de cara sexy"
+        },
+        {
+          "photoUrl": "images/3mes/cama.jpg",
+          "caption": "Tu selfie en respuesta"
+        },
+        {
+          "photoUrl": "images/3mes/random.jpg",
+          "caption": "Conexión en la calma"
+        },
+        {
+          "photoUrl": "images/3mes/egg.jpg",
+          "caption": "Mi huevito en el estilista"
+        },
+        {
+          "photoUrl": "images/3mes/dominos.jpg",
+          "caption": "Pizza para Xavjier"
+        }
+      ]
+    },
+    "song": "https://www.youtube.com/watch?v=450p7goxZqg"
+  },
+  {
+    "month": 4,
+    "date": "2024-12-30",
+    "title": "Cuatro Meses de Bendiciones",
+    "content": [
+      "Amorcito, han pasado cuatro maravillosos meses y ahora vamos a iniciar un nuevo año juntos. ¡Qué emoción!",
+      "Entre mis lecciones de Duolingo donde aparecen frases en francés como 'eres una mujer perfecta' que me recuerdan a ti inmediatamente, y ver cómo lidiabas con el estrés de tantos exámenes en la universidad mientras yo tenía tanto trabajo extra en MaltaPost, este mes ha sido intenso.",
+      "Pero lo mejor es que finalmente conseguí el permiso para visitarte mañana, 31 de diciembre, en Francia. A pesar de la dificultad para encontrar regalos perfectos para tu familia, la emoción de verte supera cualquier obstáculo. tambien me gusta como nos mantenemos conectados con los reels que nos enviamos."
+    ],
+    "signature": "Tu Viajero Decidido",
+    "memories": {
+      "photos": [
+        {
+          "photoUrl": "images/4mes/duolingo.jpg",
+          "caption": "Frases perfectas de Duolingo"
+        },
+        {
+          "photoUrl": "images/4mes/muchoexamenes.jpg",
+          "caption": "Estrés universitario"
+        },
+        {
+          "photoUrl": "images/4mes/maltapost.jpg",
+          "caption": "Horas extra en MaltaPost"
+        },
+        {
+          "photoUrl": "images/4mes/paginaweb1.jpg",
+          "caption": "Inicio de nuestra web"
+        },
+        {
+          "photoUrl": "images/4mes/reels.jpg",
+          "caption": "Conexión por reels"
+        },
+        {
+          "photoUrl": "images/4mes/masmaltapost.jpg",
+          "caption": "Incertidumbre del permiso"
+        },
+        {
+          "photoUrl": "images/4mes/regalos.jpg",
+          "caption": "Caza de regalos"
+        }
+      ]
+    },
+    "song": "https://www.youtube.com/watch?v=fV4DiAyExN0"
+  },
+  {
+    "month": 5,
+    "date": "2025-01-30",
+    "title": "Cinco Meses de Crecimiento",
+    "content": [
+      "Mi amada Flora, estos cinco meses han sido un hermoso viaje literal, porque finalmente te visité en Francia y conocí a tu familia. También conocí a la 'flora francesa', ¡ja!",
+      "Nos divertimos tanto con esos bigotes falsos (¡ya que el mío no crece rápido!), visitando el museo de Da Vinci, y hasta 'meditando' (o mejor dicho, durmiendo) en el auto camino al templo en París. Ese momento frente a la estatua de Jesucristo en el templo fue bonito y especial ya que necesitamos a Jesucristo en nuestras vidas si quieremos estar por la eternidad.",
+      "tambien reucerdo el estrés de buscar los papeles correctos para el matrimonio, tambien mis primeros pasos en el francés con esos cursos de un euro, y aquella vez que te salió sangre... cada momento ha sido un diferente pero especial. Y claro, sigo en la búsqueda interminable del anillo perfecto para nuestro compromiso mientras planeamos más viajes con nuestra aerolínea favorita, Ryanair."
+    ],
+    "signature": "Tu Estudiante de Francés",
+    "memories": {
+      "photos": [
+        {
+          "photoUrl": "images/5mes/bigotes.jpg",
+          "caption": "Dúo de bigotes falsos"
+        },
+        {
+          "photoUrl": "images/5mes/davinci.jpg",
+          "caption": "Explorando a Da Vinci"
+        },
+        {
+          "photoUrl": "images/5mes/dormir.jpg",
+          "caption": "Siesta camino al templo"
+        },
+        {
+          "photoUrl": "images/5mes/estres.jpg",
+          "caption": "Papeleo pre-boda"
+        },
+        {
+          "photoUrl": "images/5mes/frances.jpg",
+          "caption": "Francés por un euro"
+        },
+        {
+          "photoUrl": "images/5mes/misioneros.jpg",
+          "caption": "Recuerdos misionales"
+        },
+        {
+          "photoUrl": "images/5mes/mocos.jpg",
+          "caption": "los mocos"
+        },
+        {
+          "photoUrl": "images/5mes/ring.jpg",
+          "caption": "En busca del anillo"
+        },
+        {
+          "photoUrl": "images/5mes/templo.jpg",
+          "caption": "Momento en el templo"
+        },
+        {
+          "photoUrl": "images/5mes/viaje.jpg",
+          "caption": "Nuestro Ryanair"
+        }
+      ]
+    },
+    "song": "https://www.youtube.com/watch?v=rtOvBOTyX00"
+  },
+  {
+    "month": 6,
+    "date": "2025-02-28",
+    "title": "Medio Año de Amor",
+    "content": [
+      "¡Comprometidosssss! ¿Puedes creer que ya ha pasado medio año juntos? Tus fotos mostrando orgullosa tu anillo de compromiso me llenan de felicidad.",
+      "A pesar de los desafíos como ser despedido de mi trabajo, tu amor y apoyo han sido mi fuerza. Me encanta que sepas reírte de cómo duermo con los ojos entreabiertos, nuestras llamadas de 4-5 horas en un solo día, y ese nuevo look que estoy preparando para nuestra boda.",
+      "Desde nuestras 'citas virtuales' mirando la posición de las estrellas, usando mascarillas juntos en Malta, viendo 'Orgullo y Prejuicio' (para lo cual te hice ese diseño en Canva), hasta el momento mágico de la propuesta con flores cuidadosamente seleccionadas y ese bigote que te regalé en San Valentín... cada recuerdo es un tesoro. Incluso me divertí experimentando con fondos diferentes en Zoom para nuestras videollamadas."
+    ],
+    "signature": "Tu Prometido",
+    "memories": {
+      "photos": [
+        {
+          "photoUrl": "images/6mes/catacumbas.jpg",
+          "caption": "Flores de Malta"
+        },
+        {
+          "photoUrl": "images/6mes/comprometida.jpg",
+          "caption": "El anillo en tu dedo"
+        },
+        {
+          "photoUrl": "images/6mes/durmiendo.jpg",
+          "caption": "Ojos entreabiertos"
+        },
+        {
+          "photoUrl": "images/6mes/estilo.jpg",
+          "caption": "Mi look para la boda"
+        },
+        {
+          "photoUrl": "images/6mes/llamadaslargas.jpg",
+          "caption": "Horas en llamada"
+        },
+        {
+          "photoUrl": "images/6mes/orgullo.jpg",
+          "caption": "Nuestro Austen momento"
+        },
+        {
+          "photoUrl": "images/6mes/propuesta.jpg",
+          "caption": "Flores para el sí"
+        },
+        {
+          "photoUrl": "images/6mes/spa.jpg",
+          "caption": "Día de mascarillas"
+        },
+        {
+          "photoUrl": "images/6mes/stars.jpg",
+          "caption": "Estrellas compartidas"
+        },
+        {
+          "photoUrl": "images/6mes/superbigote.jpg",
+          "caption": "Regalo con bigote"
+        },
+        {
+          "photoUrl": "images/6mes/zoom.jpg",
+          "caption": "Creatividad en Zoom"
+        }
+      ]
+    },
+    "song": "https://www.youtube.com/watch?v=IcrbM1l_BoI"
+  },
+  {
+    "month": 7,
+    "date": "2025-03-30",
+    "title": "Siete Meses y Nueva Vida",
+    "content": [
+      "Mi gratitud eterna, amorcito, por ayudarme en esta adaptación a Francia. Aunque a veces me sienta como un 'bobito' por no estar en plenas facultades con el idioma, tu apoyo me ha ayudado a mejorar ese 1% que hace toda la diferencia.",
+      "Esa sorpresa de cita que organizaste en un lugar tan bonito me recuerda que dandome muchas cosas aun estas dispuestas a dar mas. Entre la actividad misional que resultó... bueno, no tan exitosa, mis pensamientos constantes hacia ti en la casa de los Duez, y ese delicioso pollo de KFC después de tus clases en la universidad, cada día es una nueva aventura.",
+      "Me gusto ese día cuando jugamos a ser artistas pintando nuestros rostros, y aunque buscar el traje perfecto para la boda fue todo un proceso divertido(me caes bien javier) y el señor no tan nice, pero gracias a ti disfruto cada paso de este camino. Incluso ese viaje con tus amigas me mostró otra faceta de tu mundo que ahora es parte del mío."
+    ],
+    "signature": "La adaptacion",
+    "memories": {
+      "photos": [
+        {
+          "photoUrl": "images/7mes/cita.jpg",
+          "caption": "Tu sorpresa especial"
+        },
+        {
+          "photoUrl": "images/7mes/diamisional.jpg",
+          "caption": "'Éxito' misional"
+        },
+        {
+          "photoUrl": "images/7mes/duez.jpg",
+          "caption": "Pensamientos en casa Duez"
+        },
+        {
+          "photoUrl": "images/7mes/kfc.jpg",
+          "caption": "KFC post-universidad"
+        },
+        {
+          "photoUrl": "images/7mes/pintura.jpg",
+          "caption": "Artistas por un día"
+        },
+        {
+          "photoUrl": "images/7mes/preparacion.jpg",
+          "caption": "En busca del traje"
+        },
+        {
+          "photoUrl": "images/7mes/salida.jpg",
+          "caption": "Aventura con amigas"
+        }
+      ]
+    },
+    "song": "https://www.youtube.com/watch?v=QxHkLdQy5f0"
+  },
+  {
+    "month": 8,
+    "date": "2025-04-30",
+    "title": "Ocho Meses y Cuenta Regresiva",
+    "content": [
+      "¡Conseguimos nuestro apartamento! Compramos las primeras cosas para nuestro hogar y la boda, y ahora solo queda esperar al siguiente mes para nuestro gran día. ¡La emoción crece cada minuto!",
+      "Mi intento de ser artista con arcilla fue... digamos 'interesante', aunque ambos sabemos que resultó bastante malo. Pero me encantó recibir tu foto tan bonita de cuando te vea te dare un besito asi todo mientras estaba en Dijon, y descubrir algunos de los mejores postres en Francia.",
+      "Gracias por mostrarme ese parque en tu ciudad quede muy sorprendido incluso me gustaria volver, por tus pacientes clases de francés e incluso ese día cuando quedé como 'Javier el Mesías' con las manos lastimadas tras trepar la cerca de la capilla cerrada,cada momento, incluso los difíciles, tiene sentido porque los vivimos juntos. Ver los diseños para la boda y la preparación de nuestra torta hace que todo se sienta cada vez más real."
+    ],
+    "signature": "A un mes de ser tu esposo",
+    "memories": {
+      "photos": [
+        {
+          "photoUrl": "images/8mes/artistas.jpg",
+          "caption": "Mi obra maestra de arcilla"
+        },
+        {
+          "photoUrl": "images/8mes/besitos.jpg",
+          "caption": "besos a distancia"
+        },
+        {
+          "photoUrl": "images/8mes/besitos2.jpg",
+          "caption": "Postres franceses favoritos"
+        },
+        {
+          "photoUrl": "images/8mes/ciudad.jpg",
+          "caption": "Tu parque de infancia"
+        },
+        {
+          "photoUrl": "images/8mes/clasesfrances.jpg",
+          "caption": "Mis lecciones de francés"
+        },
+        {
+          "photoUrl": "images/8mes/comida.jpg",
+          "caption": "Antojos compartidos"
+        },
+        {
+          "photoUrl": "images/8mes/dolor.jpg",
+          "caption": "Javier el Mesías"
+        },
+        {
+          "photoUrl": "images/8mes/internet.jpg",
+          "caption": "Biblioteca salvadora"
+        },
+        {
+          "photoUrl": "images/8mes/preparacion.jpg",
+          "caption": "Diseños para la boda"
+        },
+        {
+          "photoUrl": "images/8mes/torta.jpg",
+          "caption": "Nuestra futura torta"
+        }
+      ]
+    },
+    "song": "https://www.youtube.com/watch?v=aJOTlE1K90k"
+  }
+]

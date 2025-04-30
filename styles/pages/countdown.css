@@ -1,0 +1,54 @@
+/* Countdown page specific styles */
+.countdown-page {
+    overflow-x: hidden;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.time-box {
+    background: linear-gradient(to bottom, var(--color-rose-500), var(--color-rose-600));
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    min-width: 110px;
+    color: white;
+    box-shadow: 0 6px 12px rgba(244, 63, 94, 0.2);
+    transition: var(--transition-normal);
+}
+
+.time-box:hover {
+    transform: translateY(-5px);
+}
+
+.time-box span {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: var(--space-xs);
+}
+
+.time-box p {
+    font-size: var(--font-small);
+    font-weight: 500;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.countdown-message {
+    font-size: var(--font-medium);
+    margin: var(--space-lg) 0;
+    color: var(--color-rose-600);
+    font-weight: 600;
+}
+
+.location-details p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-gray-700);
+}

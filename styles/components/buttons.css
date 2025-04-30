@@ -1,0 +1,244 @@
+/* === BUTTON COMPONENTS === */
+
+/* Primary button */
+.primary-button {
+    display: block;
+    width: 100%;
+    padding: var(--space-sm);
+    background: var(--color-rose-500);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: var(--transition-normal);
+}
+
+.primary-button:hover {
+    background: var(--color-rose-600);
+    transform: translateY(-1px);
+}
+
+.primary-button.ready {
+    animation: pulse 2s infinite;
+}
+
+/* Secondary button */
+.secondary-button {
+    display: block;
+    width: 100%;
+    padding: var(--space-sm);
+    background: #f3f4f6;
+    color: var(--color-gray-700);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: var(--transition-normal);
+    margin-top: var(--space-sm);
+}
+
+.secondary-button:hover {
+    background: #e5e7eb;
+}
+
+/* Event button */
+.event-btn {
+    background: #f3f4f6;
+    border: none;
+    border-radius: var(--radius-lg);
+    padding: 0.6rem 1.2rem;
+    font-size: var(--font-small);
+    font-weight: 600;
+    color: var(--color-gray-700);
+    cursor: pointer;
+    transition: var(--transition-normal);
+}
+
+.event-btn:hover {
+    background: #e5e7eb;
+    transform: translateY(-2px);
+}
+
+.event-btn.active {
+    background: var(--color-rose-500);
+    color: white;
+    box-shadow: 0 4px 8px rgba(244, 63, 94, 0.25);
+}
+
+/* Button group container */
+.button-group {
+    margin-top: var(--space-lg);
+}
+
+/* Month button */
+.month-button {
+    background-color: white;
+    border: 1px solid var(--color-gray-200);
+    color: var(--color-gray-700);
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-medium);
+    box-shadow: var(--shadow-sm);
+}
+
+.month-button:hover {
+    background-color: var(--color-rose-50);
+    border-color: var(--color-rose-300);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.month-button.active {
+    background-color: var(--color-rose-600);
+    border-color: var(--color-rose-600);
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+.month-button.future {
+    background-color: var(--color-gray-100);
+    border-color: var(--color-gray-200);
+    color: var(--color-gray-400);
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.month-button.future:hover {
+    background-color: var(--color-gray-200);
+    transform: translateY(-1px);
+}
+
+/* Letter navigation buttons */
+.letter-nav-button {
+    background-color: white;
+    border: 1px solid var(--color-gray-200);
+    color: var(--color-gray-700);
+    padding: 0.75rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-medium);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.letter-nav-button:hover:not(:disabled) {
+    background-color: var(--color-rose-50);
+    border-color: var(--color-rose-300);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    color: var(--color-rose-600);
+}
+
+.letter-nav-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.arrow {
+    font-size: 1.1rem;
+}
+
+/* Language buttons */
+.language-btn {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid var(--color-rose-500);
+    color: var(--color-rose-600);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.language-btn:hover {
+    background: var(--color-rose-500);
+    color: white;
+}
+
+.language-btn.active {
+    background: var(--color-rose-600);
+    color: white;
+}
+
+/* Mobile menu toggle button */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 110;
+    position: relative;
+}
+
+.mobile-menu-toggle span {
+    width: 100%;
+    height: 3px;
+    background: var(--color-rose-600);
+    border-radius: 3px;
+    transition: all 0.3s;
+    display: block;
+}
+
+/* Estados activos del toggle del menú móvil */
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Carousel control buttons */
+.carousel-btn {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    font-size: 1.25rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(1.1);
+}
+
+/* Media queries para botones */
+@media (max-width: 767px) {
+    .letter-nav-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+}

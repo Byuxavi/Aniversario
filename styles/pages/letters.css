@@ -1,0 +1,275 @@
+/* Letters page specific styles */
+body.letters-page {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Letter selection area */
+.letter-selection {
+    flex: 1;
+    min-width: 0;
+}
+
+.letter-selection h1 {
+    font-family: var(--font-fancy);
+    font-size: 2.5rem;
+    color: var(--color-rose-700);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.letter-selection .subtitle {
+    text-align: center;
+    color: var(--color-gray-600);
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* Month selector */
+.month-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.month-button {
+    background-color: white;
+    border: 1px solid var(--color-gray-200);
+    color: var(--color-gray-700);
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-medium);
+    box-shadow: var(--shadow-sm);
+}
+
+.month-button:hover {
+    background-color: var(--color-rose-50);
+    border-color: var(--color-rose-300);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.month-button.active {
+    background-color: var(--color-rose-600);
+    border-color: var(--color-rose-600);
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+.month-button.future {
+    background-color: var(--color-gray-100);
+    border-color: var(--color-gray-200);
+    color: var(--color-gray-400);
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.month-button.future:hover {
+    background-color: var(--color-gray-200);
+    transform: translateY(-1px);
+}
+
+/* Letter Content Area */
+.letter-content {
+    flex: 2;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Letter Header */
+.letter-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.letter-decoration {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--color-rose-400);
+    margin-bottom: 0.5rem;
+}
+
+.letter-title {
+    font-family: var(--font-fancy);
+    font-size: 2rem;
+    color: var(--color-rose-700);
+    margin-bottom: 0.5rem;
+}
+
+.letter-date {
+    font-family: var(--font-serif);
+    font-style: italic;
+    color: var(--color-gray-500);
+    font-size: 0.9rem;
+}
+
+/* Letter Body */
+.letter-body {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-gray-800);
+}
+
+.letter-body p {
+    margin-bottom: 1.5rem;
+}
+
+.letter-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* Letter Footer */
+.letter-footer {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.letter-signature {
+    font-family: var(--font-fancy);
+    font-size: 1.5rem;
+    color: var(--color-rose-600);
+}
+
+/* Letter Navigation */
+.letter-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.letter-nav-button {
+    background-color: white;
+    border: 1px solid var(--color-gray-200);
+    color: var(--color-gray-700);
+    padding: 0.75rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-medium);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.letter-nav-button:hover:not(:disabled) {
+    background-color: var(--color-rose-50);
+    border-color: var(--color-rose-300);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    color: var(--color-rose-600);
+}
+
+.letter-nav-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.arrow {
+    font-size: 1.1rem;
+}
+
+.letter-indicators {
+    font-size: 0.9rem;
+    color: var(--color-gray-500);
+    font-weight: 500;
+}
+
+.current-letter {
+    color: var(--color-rose-600);
+    font-weight: 700;
+}
+
+/* Letter memories section */
+.letter-memories {
+    margin-top: 1rem;
+}
+
+.letter-memories h3 {
+    text-align: center;
+    font-family: var(--font-fancy);
+    font-size: 1.5rem;
+    color: var(--color-rose-700);
+    margin-bottom: 1rem;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    padding: 1.5rem 0;
+    width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-rose-300) var(--color-rose-50);
+  }
+  
+  /* Estilos para la barra de scroll (opcional pero recomendado) */
+  .photo-gallery::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .photo-gallery::-webkit-scrollbar-track {
+    background: var(--color-rose-50);
+    border-radius: 10px;
+  }
+  
+  .photo-gallery::-webkit-scrollbar-thumb {
+    background-color: var(--color-rose-300);
+    border-radius: 10px;
+  }
+  
+  .photo-item {
+    flex: 0 0 auto;
+    width: 280px; /* Un poco más grande para mejor visualización */
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    position: relative;
+    scroll-snap-align: start;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+    border: 2px solid white;
+  }
+  
+  .photo-item:hover {
+    transform: scale(1.03);
+    box-shadow: var(--shadow-lg);
+    z-index: 1;
+  }
+  
+  /* Añade márgenes laterales en dispositivos móviles */
+  @media (max-width: 768px) {
+    .photo-gallery {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      gap: 1rem;
+    }
+    
+    .photo-item {
+      width: 220px;
+      height: 160px;
+    }
+  }
+  
+  /* Asegura que el contenedor padre no cause overflow */
+  .letter-memories {
+    width: 100%;
+    overflow: hidden;
+  }

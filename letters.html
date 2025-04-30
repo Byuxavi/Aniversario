@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una colección de cartas de amor para nuestros aniversarios mensuales">
+    <title>Cartas de Amor | Nuestro Aniversario</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body class="letters-page">
+    <!-- Background with parallax effect -->
+    <div class="background-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="heart-icon">❤️</span>
+                <span class="logo-text">Nuestro Amor</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="letters.html" class="active" aria-current="page">Cartas de Amor</a>
+                <a href="goals.html">Nuestras Metas</a>
+                <a href="countdown.html">Cuenta Regresiva</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile menu (hidden by default) -->
+    <div class="mobile-menu">
+        <a href="index.html">Inicio</a>
+        <a href="letters.html" class="active">Cartas de Amor</a>
+        <a href="goals.html">Nuestras Metas</a>
+        <a href="countdown.html">Cuenta Regresiva</a>
+    </div>
+
+    <!-- Letter selection and display -->
+    <main class="letter-container">
+        <section class="letter-selection">
+            <h1>Nuestra Historia de Amor</h1>
+            <p class="subtitle">Cada mes, una nueva carta para celebrar nuestro amor</p>
+            
+            <div class="month-selector">
+                <button class="month-button active" data-month="1">Mes 1</button>
+                <button class="month-button" data-month="2">Mes 2</button>
+                <button class="month-button" data-month="3">Mes 3</button>
+                <button class="month-button" data-month="4">Mes 4</button>
+                <button class="month-button" data-month="5">Mes 5</button>
+                <button class="month-button" data-month="6">Mes 6</button>
+                <button class="month-button" data-month="7">Mes 7</button>
+                <button class="month-button" data-month="8">Mes 8</button>
+                <button class="month-button future" data-month="9">Mes 9</button>
+                <button class="month-button future" data-month="10">Mes 10</button>
+                <button class="month-button future" data-month="11">Mes 11</button>
+                <button class="month-button future" data-month="12">Mes 12</button>
+            </div>
+        </section>
+        
+        <article class="letter-content">
+            <div class="letter-paper">
+                <div class="letter-header">
+                    <div class="letter-decoration">❦</div>
+                    <h2 class="letter-title">Mi Carta de Amor para Ti</h2>
+                    <div class="letter-date">30 de septiembre, 2024</div>
+                </div>
+                
+                <div class="letter-body">
+                    <p>
+                        Cargando nuestra historia de amor...
+                    </p>
+                </div>
+                
+                <div class="letter-footer">
+                    <div class="letter-signature">Con todo mi amor</div>
+                </div>
+            </div>
+            
+            <div class="letter-actions">
+                <button id="prev-letter" class="letter-nav-button" disabled>
+                    <span class="arrow">←</span> Anterior
+                </button>
+                <div class="letter-indicators">
+                    <span class="current-letter">1</span>/<span class="total-letters">12</span>
+                </div>
+                <button id="next-letter" class="letter-nav-button">
+                    Siguiente <span class="arrow">→</span>
+                </button>
+            </div>
+            
+            <div class="letter-memories">
+                <h3>Momentos Especiales</h3>
+                <div class="photo-placeholder" id="month-photo">
+                    <div class="photo-message">Recuerdos de este mes</div>
+                </div>
+            </div>
+        </article>
+    </main>
+    
+    <!-- Floating hearts decoration -->
+    <div class="floating-hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 | Hecho con <span class="heart-icon">❤️</span> para mi amor</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram" class="social-icon">📷</a>
+                <a href="#" aria-label="Spotify Playlist" class="social-icon">🎵</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/scripts/modules/Letter gallery.js"></script>
+    <script src="/scripts/modules/mobile-menu.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

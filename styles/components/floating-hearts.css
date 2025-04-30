@@ -1,0 +1,213 @@
+/* === FLOATING HEARTS COMPONENTS === */
+
+/* Contenedor para corazones flotantes */
+.floating-hearts {
+    position: fixed;
+    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* Estilos básicos del corazón */
+.heart {
+    position: absolute;
+    bottom: -100px;
+    background-color: var(--color-rose-300);
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    animation: float-up 15s linear infinite;
+    opacity: 0.6;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-rose-300);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    top: -15px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: -15px;
+}
+
+/* Variación de tamaños y posiciones */
+.heart:nth-child(1) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-duration: 12s;
+    animation-delay: 0s;
+}
+
+.heart:nth-child(1)::before,
+.heart:nth-child(1)::after {
+    width: 20px;
+    height: 20px;
+}
+
+.heart:nth-child(1)::before {
+    top: -10px;
+}
+
+.heart:nth-child(1)::after {
+    left: -10px;
+}
+
+.heart:nth-child(2) {
+    left: 30%;
+    width: 15px;
+    height: 15px;
+    animation-duration: 18s;
+    animation-delay: 3s;
+}
+
+.heart:nth-child(2)::before,
+.heart:nth-child(2)::after {
+    width: 15px;
+    height: 15px;
+}
+
+.heart:nth-child(2)::before {
+    top: -7.5px;
+}
+
+.heart:nth-child(2)::after {
+    left: -7.5px;
+}
+
+.heart:nth-child(3) {
+    left: 50%;
+    animation-duration: 13s;
+    animation-delay: 5s;
+}
+
+.heart:nth-child(4) {
+    left: 70%;
+    width: 25px;
+    height: 25px;
+    animation-duration: 16s;
+    animation-delay: 2s;
+}
+
+.heart:nth-child(4)::before,
+.heart:nth-child(4)::after {
+    width: 25px;
+    height: 25px;
+}
+
+.heart:nth-child(4)::before {
+    top: -12.5px;
+}
+
+.heart:nth-child(4)::after {
+    left: -12.5px;
+}
+
+.heart:nth-child(5) {
+    left: 85%;
+    width: 18px;
+    height: 18px;
+    animation-duration: 14s;
+    animation-delay: 7s;
+}
+
+.heart:nth-child(5)::before,
+.heart:nth-child(5)::after {
+    width: 18px;
+    height: 18px;
+}
+
+.heart:nth-child(5)::before {
+    top: -9px;
+}
+
+.heart:nth-child(5)::after {
+    left: -9px;
+}
+
+.heart:nth-child(6) {
+    left: 15%;
+    width: 22px;
+    height: 22px;
+    animation-duration: 17s;
+    animation-delay: 9s;
+}
+
+.heart:nth-child(6)::before,
+.heart:nth-child(6)::after {
+    width: 22px;
+    height: 22px;
+}
+
+.heart:nth-child(6)::before {
+    top: -11px;
+}
+
+.heart:nth-child(6)::after {
+    left: -11px;
+}
+
+/* Ícono de corazón con animación de latido */
+.heart-icon {
+    font-size: 1.25rem;
+    animation: heartbeat 1.5s infinite;
+}
+
+/* Confetti heart animation for celebrations */
+.confetti-heart {
+    position: fixed;
+    z-index: 100;
+    top: -10vh;
+    font-size: 1.5rem;
+    animation: confettiDrop 5s linear forwards;
+}
+
+/* Some additional components using heart motifs */
+.anniversary-badge {
+    position: absolute;
+    bottom: -0.5rem;
+    right: -0.5rem;
+    background: var(--color-rose-600);
+    color: white;
+    font-size: var(--font-small);
+    padding: var(--space-sm);
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-15deg);
+}
+
+.anniversary-badge #months-count {
+    font-size: var(--font-medium);
+    line-height: 1;
+}
+
+/* Floating heart individual animation */
+.floating-heart {
+    position: absolute;
+    color: var(--color-rose-500);
+    opacity: 0;
+    pointer-events: none;
+    animation: floatHeart 4s ease-in-out forwards;
+}

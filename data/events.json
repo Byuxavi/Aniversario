@@ -1,0 +1,17 @@
+{
+  "wedding": {
+    "date": "2025-05-30",
+    "message": "Every second brings us closer to forever ❤️",
+    "location": "Paris, France"
+  },
+  "anniversary": {
+    "date": "2026-05-30",
+    "message": "Counting down to one year of love ❤️",
+    "location": "Rome, Italy"
+  },
+  "special": {
+    "date": "2025-07-15",
+    "message": "Our special day is approaching ❤️",
+    "location": "Barcelona, Spain"
+  }
+}

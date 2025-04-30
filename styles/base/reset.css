@@ -1,0 +1,50 @@
+/* reset.css - Reset unificado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    min-height: 100vh;
+    background-color: var(--color-rose-50);
+    color: var(--color-gray-800);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.background-overlay {
+    position: fixed;
+    inset: 0;
+    background-image: url('https://images.pexels.com/photos/6065608/pexels-photo-6065608.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+/* Reseteo de elementos comunes */
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+}

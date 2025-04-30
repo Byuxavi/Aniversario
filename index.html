@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Celebra nuestro aniversario con esta página especial llena de recuerdos y amor">
+    <title>Nuestro Aniversario | Amor Eterno</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/temple.jpg" type="image/x-icon">
+</head>
+<body class="home-page">
+    <!-- Background with overlay effect -->
+    <div class="background-overlay"></div>
+    
+    <!-- Navigation - Simplificado -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="heart-icon">❤️</span>
+                <span class="logo-text">Nuestro Amor</span>
+            </a>
+        </div>
+    </nav>
+    
+    <!-- Main content -->
+    <main class="main-content">
+        <div class="card animate-fade-in">
+            <div class="card-header">
+                <div class="profile-container">
+                    <img src="images/cute.jpg" alt="Nuestra foto juntos" class="profile-pic">
+                    <div class="anniversary-badge" id="months-together">
+                        <span id="months-count">0</span>
+                        <span>meses</span>
+                    </div>
+                </div>
+                <h1 class="title">Feliz Aniversario, Amorcito</h1>
+                <p class="subtitle">Otro mes lleno de amor, aventuras y sueños cumplidos juntos</p>
+            </div>
+            
+            <div class="card-content">
+                <div id="initial-view">
+                    <div class="input-container">
+                        <label for="anniversary">Ingresa la fecha en que comenzó nuestra relación:</label>
+                        <div class="date-input-wrapper">
+                            <span class="calendar-icon">📅</span>
+                            <input type="date" id="anniversary">
+                        </div>
+                        <button id="verify-date" class="primary-button">Continuar</button>
+                    </div>
+                </div>
+                
+                <div id="success-view" class="hidden">
+                    <div class="success-message">
+                        <div class="icon-circle success">❤️</div>
+                        <h2>¡Fecha correcta!</h2>
+                        <p>Cada día contigo es un regalo. Nuestro amor comenzó el <span id="start-date"></span> y desde entonces hemos construido recuerdos maravillosos.</p>
+                        <div class="button-group">
+                            <a href="letters.html" class="primary-button pulse">Te amo infinitamente</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="error-view" class="hidden">
+                    <div class="error-message">
+                        <div class="icon-circle error">💔</div>
+                        <h2>Fecha incorrecta</h2>
+                        <p>Parece que no recordaste nuestra fecha especial. ¡Inténtalo de nuevo!</p>
+                        <button id="try-again" class="secondary-button">Intentar de nuevo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Floating hearts decoration -->
+    <div class="floating-hearts" id="floating-hearts"></div>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>Hecho con <span class="heart-icon">❤️</span> para mi amor Flora</p>
+        </div>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

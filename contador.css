@@ -1,0 +1,466 @@
+/* Base styles */
+:root {
+    --color-rose-50: #fff1f2;
+    --color-rose-100: #ffe4e6;
+    --color-rose-500: #f43f5e;
+    --color-rose-600: #e11d48;
+    --color-rose-700: #be123c;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, var(--color-rose-50), var(--color-rose-100));
+    color: var(--color-gray-800);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Background */
+.background-overlay {
+    position: fixed;
+    inset: 0;
+    background-image: url('https://images.pexels.com/photos/6065608/pexels-photo-6065608.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+/* Navigation */
+.main-nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-rose-700);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--color-gray-700);
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-rose-600);
+}
+
+.nav-links a.active {
+    color: var(--color-rose-600);
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-rose-600);
+    border-radius: 2px;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-gray-700);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Countdown specific styles */
+.countdown-page {
+    overflow-x: hidden;
+}
+
+.countdown-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    z-index: 1;
+    width: 100%;
+    max-width: 900px;
+}
+
+.countdown-timer {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.countdown-timer h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: var(--color-rose-600);
+    margin-bottom: 1.5rem;
+}
+
+.event-selector {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.event-btn {
+    background: #f3f4f6;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-gray-700);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.event-btn:hover {
+    background: #e5e7eb;
+    transform: translateY(-2px);
+}
+
+.event-btn.active {
+    background: var(--color-rose-500);
+    color: white;
+    box-shadow: 0 4px 8px rgba(244, 63, 94, 0.25);
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.time-box {
+    background: linear-gradient(to bottom, var(--color-rose-500), var(--color-rose-600));
+    border-radius: 1rem;
+    padding: 1.5rem;
+    min-width: 110px;
+    color: white;
+    box-shadow: 0 6px 12px rgba(244, 63, 94, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.time-box:hover {
+    transform: translateY(-5px);
+}
+
+.time-box span {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.time-box p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.countdown-message {
+    font-size: 1.25rem;
+    margin: 1.5rem 0;
+    color: var(--color-rose-600);
+    font-weight: 600;
+}
+
+.location-info {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-rose-100);
+}
+
+.location-info h3 {
+    font-size: 1.5rem;
+    font-family: 'Dancing Script', cursive;
+    color: var(--color-gray-700);
+    margin-bottom: 1rem;
+}
+
+.location-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.location-icon {
+    font-size: 1.5rem;
+    color: var(--color-rose-500);
+    animation: bounce 2s infinite;
+}
+
+.location-details p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-gray-700);
+}
+
+/* Footer */
+.main-footer {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    padding: 1.5rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    color: var(--color-gray-700);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-20vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Floating hearts decoration */
+.floating-hearts {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--color-rose-500);
+    transform: rotate(45deg);
+    opacity: 0;
+}
+
+.heart:before,
+.heart:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: var(--color-rose-500);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart:before {
+    top: -10px;
+    left: 0;
+}
+
+.heart:after {
+    top: 0;
+    left: -10px;
+}
+
+.heart:nth-child(1) {
+    left: 10%;
+    animation: floatUp 15s linear infinite;
+    animation-delay: 1s;
+}
+
+.heart:nth-child(2) {
+    left: 50%;
+    animation: floatUp 20s linear infinite;
+    animation-delay: 5s;
+}
+
+.heart:nth-child(3) {
+    left: 85%;
+    animation: floatUp 17s linear infinite;
+    animation-delay: 7s;
+}
+
+/* Celebration effect */
+body.celebrating {
+    overflow: hidden;
+}
+
+.confetti-heart {
+    position: fixed;
+    z-index: 100;
+    top: -10vh;
+    font-size: 1.5rem;
+    animation: confettiDrop 5s linear forwards;
+}
+
+@keyframes confettiDrop {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(120vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        max-width: 300px;
+        background: white;
+        flex-direction: column;
+        padding: 5rem 2rem 2rem;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 25;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+        z-index: 30;
+    }
+    
+    .mobile-menu-toggle.active span:first-child {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-toggle.active span:last-child {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .timer {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .time-box {
+        min-width: 90px;
+        padding: 1rem;
+    }
+    
+    .time-box span {
+        font-size: 2.25rem;
+    }
+    
+    .countdown-timer h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .time-box {
+        min-width: 70px;
+        padding: 0.75rem;
+    }
+    
+    .time-box span {
+        font-size: 1.75rem;
+    }
+    
+    .time-box p {
+        font-size: 0.75rem;
+    }
+    
+    .event-selector {
+        flex-wrap: wrap;
+    }
+    
+    .countdown-timer h1 {
+        font-size: 1.75rem;
+    }
+}

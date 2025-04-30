@@ -1,0 +1,23 @@
+/* Homepage specific styles */
+/* The index page contains the date entry form */
+.index-page {
+    overflow-x: hidden;
+}
+
+/* Any specific overrides for the index page can go here */
+.title {
+    font-family: 'Dancing Script', cursive;
+    color: #f9fafb; /* Rosa romántico */
+    font-size: 2.8rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff1f2; /* Rosa oscuro elegante */
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
