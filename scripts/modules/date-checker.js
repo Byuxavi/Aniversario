@@ -20,7 +20,7 @@ function initDateChecker() {
   const monthsCount = document.getElementById('months-count');
   
   // Configuración de la fecha de aniversario (formato: YYYY-MM-DD)
-  const correctDate = '2024-05-30'; // Ajusta esta fecha a tu aniversario real
+  const correctDate = '2024-08-30'; // Ajusta esta fecha a tu aniversario real
   const formattedDate = formatDate(correctDate);
   
   // Actualizar el contador de meses
